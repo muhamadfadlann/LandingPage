@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style untuk menu utama */
+        nav ul.menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul.menu li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul.menu li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #010101;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul.menu li a:hover {
+            background-color: #abe3c3;
+            border-radius: 5px;
+        }
+
+        /* Style untuk submenu */
+        nav ul.menu li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul.menu li ul li {
+            margin: 0;
+        }
+
+        nav ul.menu li ul li a {
+            padding: 10px 20px;
+            color: #010101;
+            white-space: nowrap;
+        }
+
+        nav ul.menu li ul li a:hover {
+            background-color: #abe3c3;
+        }
+
+        /* Tampilkan submenu ketika item di-hover */
+        nav ul.menu li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo1.png" height="55px">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Kota Pilihan</a>
+                    <ul>
+                        <li><a href="#">Yogyakarta</a></li>
+                        <li><a href="#">Jakarta</a></li>
+                        <li><a href="#">Bali</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Paket</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="destinasi">
+            <h1>Destinasi Liburan</h1>
+            <div class="card">
+                <img src="kuta.jpg" alt="Destinasi 1">
+                <h2>Pantai  Kuta</h2>
+                <p>Menikmati keindahan pantai dengan pasir putih dan laut biru di Bali.</p>
+                <p>Viewers: 678k</p>
+                <p>Comments: 35k</p>
+                <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="bromo.jpg" alt="Destinasi 2">
+                <h2>Gunung Bromo</h2>
+                <p>Mengunjungi keindahan alam dan pemandangan diatas Gunung Bromo.</p>
+                <p>Viewers: 200k</p>
+                <p>Comments: 5k</p>
+                <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="toba.jpg" alt="Destinasi 3">
+                <h2>Danau Toba</h2>
+                <p>Merasakan kedamaian dan keindahan alam di sekitar Danau Toba.</p>
+                <p>Viewers: 120k</p>
+                <p>Comments: 30k</p>
+                <button>Baca Selengkapnya</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
